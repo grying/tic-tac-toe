@@ -22,10 +22,9 @@ body {
   width: 379px;
   height: 379px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 40px;
   position: relative;
   flex-wrap: wrap;
-  
 }
 .modal {
   width: 100%;
@@ -37,12 +36,13 @@ body {
 }
 .overlay {
   width: 100%;
-  height: 100%;
+  height: 160%;
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-    z-index: 10;
-  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .modal__window {
   position: absolute;
@@ -53,18 +53,18 @@ body {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-    z-index: 10;
+  z-index: 10;
 }
 .contnet {
   color: #fff;
   font-size: 54px;
-    z-index: 10;
+  z-index: 10;
 }
 .close {
   position: absolute;
   bottom: 0;
   cursor: pointer;
-    z-index: 10;
+  z-index: 10;
 }
 
 .header {
@@ -72,7 +72,7 @@ body {
   justify-content: space-between;
   width: 300px;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 75px;
 }
 .table {
   display: flex;
@@ -107,8 +107,8 @@ body {
 }
 .close__img {
   position: absolute;
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   right: -20px;
   top: 40px;
 }
@@ -122,4 +122,46 @@ body {
   right: 0;
   top: 17px;
   right: 15px;
+}
+.player {
+  display: flex;
+
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+}
+.btn__player {
+  color: #fff;
+  background-color: royalblue;
+  padding: 16px 93px;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all .8s ease-in;
+}
+
+.btn__player + .btn__player {
+  margin-top: 30px;
+}
+.active {
+  animation: 1s ease-out;
+  background-color: yellowgreen;
+}
+.end {
+  width: 323px;
+  margin: 0 auto;
+  margin-top: 30px;
+  background-color: yellowgreen;
+ padding: 15px 73px;
+  border-radius: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.text{
+  font-size: 52px;
+  margin: 0 auto;
+  position: absolute;
+  color: #fff;
+  top: 110px;
 }
